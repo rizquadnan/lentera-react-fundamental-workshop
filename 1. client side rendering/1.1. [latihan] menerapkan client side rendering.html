@@ -4,6 +4,7 @@
   </head>
   <body>
     <!-- 💻 buatlah sebuah div yang memiliki id "root" -->
+    <div id="root"></div>
 
     <script>
       // 💻 buatlah element <h1> menggunakan document.createElement() dan simpan ke variable heading
@@ -13,20 +14,23 @@
        * Selanjutnya, lihatlah contoh penggunaan document.createElement() pada bagian "Example",
        * Sesuaikan contoh yang ada disana dengan kasus yang dibutuhkan pada exercise ini
        */
-      const heading = null;
+      const heading = document.createElement('h1');
 
       // 💻 ubah textContent dari variable heading menjadi "hello world"
       // 📖 https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
+      heading.textContent = 'hello world';
 
       // 💻 ubah id dari variable heading menjadi "title"
       // 📖 https://developer.mozilla.org/en-US/docs/Web/API/Element/id
+      heading.id = 'title';
 
       // 💻 dapatkan <div> dengan id "root" menggunakan document.getElementById() dan simpan ke variable root
       // 📖 https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
-      const root = null;
+      const root = document.getElementById('root');
 
       // 💻 masukkan variable heading ke dalam variable root menggunakan append()
       // 📖 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append
+      root.append(heading);
     </script>
   </body>
 </html>
