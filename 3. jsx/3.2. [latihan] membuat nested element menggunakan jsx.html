@@ -11,17 +11,20 @@
       const greeting = (
         <div>
           {/* 💻 buatlah <h1> menggunakan jsx dan ubah children-nya menjadi "Welcome" */}
+            <h1>Welcome</h1>
 
           {/* 💻 buatlah <input> menggunakan jsx dan ubah type-nya menjadi "text" dan placeholder-nya menjadi "enter your name" */}
-
+            <input type="text" placeholder="enter your name" />
+          
           {/* 💻 buatlah <button> menggunakan jsx dan ubah children-nya menjadi "Say hi" */}
+            <button>Say hi</button>
         </div>
       );
 
       const root = document.getElementById("root");
 
       // 💻 masukkan greeting ke dalam root menggunakan ReactDOM.render()
-      ReactDOM.render(null, root);
+      ReactDOM.render(greeting, root);
     </script>
   </body>
 </html>
