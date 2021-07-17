@@ -8,14 +8,16 @@
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
     <script>
       // 💻 buatlah array baru dengan nilai ["Budi", "Tono", "Asep"], kemudian simpan ke variable students
-      const students = null;
+      const students = ["Budi", "Tono", "Asep"];
 
       // 💻 mapping array students yang semula adalah array of string menjadi array of element
-      const studentListItems = null;
+      const studentListItems = students.map(studentName => {
+        return React.createElement('li', { children: studentName })
+      });
 
       // 💻 gunakan studentListItems sebagai children dari studentList
       const studentList = React.createElement("ol", {
-        children: null,
+        children: studentListItems,
       });
 
       const root = document.getElementById("root");
