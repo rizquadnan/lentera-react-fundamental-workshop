@@ -11,8 +11,8 @@
       const students = ["Budi", "Tono", "Asep"];
 
       // 💻 mapping array students yang semula adalah array of string menjadi array of element
-      const studentListItems = students.map(studentName => {
-        return React.createElement('li', { children: studentName })
+      const studentListItems = students.map((studentName, index) => {
+        return React.createElement('li', { children: studentName, key: `${studentName}-${index}`  })
       });
 
       // 💻 gunakan studentListItems sebagai children dari studentList
